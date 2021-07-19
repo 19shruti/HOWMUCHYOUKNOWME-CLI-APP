@@ -10,12 +10,12 @@ var userAnswer= readlineSync.question(input);
 if(userAnswer.toUpperCase()===output.toUpperCase())
 {
 	score=score+1;
-	console.log('right ' +' your score is :' + score);
+	console.log(chalk.green.bold('right ' +' your score is :' + score));
 }
 else
 {
 score=score-1;
-console.log('wrong ' +' your score is :' + score);
+console.log(chalk.green.bold('wrong the answer is :' +output + '|| your score is :' + score));
 }
 if(score===3)
 console.log(chalk.red('CONGRATS ! YOU ARE IN LEVEL 1'));
@@ -24,7 +24,7 @@ console.log(chalk.redBright('CONGRATS !  YOU KNOW SHRUTI VERY WELL '));
 }
 Play('Where shruti is from (country ) ?', 'india');
 Play("Where Shruti's  birthplace is (city) ",'ranchi');
-Play("Where Shruti's study (colledge )", "sikkim");
+Play("Where Shruti's study (college place)", "sikkim");
 Play("Shruti's birthday (date month) ?","9 april");
 Play("Shruti's favourite food", 'chicken biryani');
 Play("Shruti's favourite hobby ?",'painting');
